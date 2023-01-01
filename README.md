@@ -1,70 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Authentication Using JasonWebToken (jwt)
 
-## Available Scripts
+This project is used to authenticate weather users are valid or
+not by using jwt token. If user has this token then they are valid
+or you can say they can access required page or else they can't
+access required page.
+ #
+ This project based on or built using mern stack. 
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+To deploy this project run or install some packages which are given
+below
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First of all we need to create react app
+```bash
+  npx create-react-app "App_name"
+```
+we need to install some kind of packages by using these commands :
 
-### `npm run build`
+```bash
+npm i react-router-dom
+```
+```bash
+npm i react-alert
+```
+After that we need to add one line of code in package.json file 
+of app above "dependencies" like this :
+```bash
+"proxy": "http://localhost:8000/",
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After that we can run our app by using this command :
+```bash
+npm run start
+```
+Now For backend part we need to create one folder inside our app
+Inside that folder we need to install express, mongoose by these
+commands :
+```bash
+npm init -y
+```
+above command will generate package.json file
+```bash
+npm install express
+```
+```bash
+npm install mongoose
+```
+After that we need to install some packages by using these commands:
+```bash
+npm install bcryptjs
+```
+```bash
+npm install cookie-parser
+```
+```bash
+npm install dotenv
+```
+```bash
+npm install jsonwebtoken
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is the whole setup we need to do before make our application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Documentation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can use this link to access playlist or usefull videos for mern
+development :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://youtube.com/playlist?list=PLwGdqUZWnOp3t3qT7pvAznwUDzKbhEcCc
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot (415)](https://user-images.githubusercontent.com/107313472/209333411-d0ab47be-0724-4c86-b07d-3775a72af8c6.png)
 
-### Code Splitting
+#
+![Screenshot (416)](https://user-images.githubusercontent.com/107313472/209333431-1ce22b8a-cdbd-42c1-a12c-426bd22d62cf.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#
+![Screenshot (417)](https://user-images.githubusercontent.com/107313472/209333452-c2d05141-956b-48e2-aafc-11503799eb09.png)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
