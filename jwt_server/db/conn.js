@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 //for mongodb atlas
 
-// mongoose.connect("mongodb+srv://purva2002:purva2002@cluster0.5uojpbz.mongodb.net/jwt_database?retryWrites=true&w=majority",{
+// mongoose.connect("mongodb+srv://username:password@cluster0.5uojpbz.mongodb.net/jwt_database?retryWrites=true&w=majority",{
 
 
     useNewUrlParser: true,
