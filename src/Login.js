@@ -52,7 +52,7 @@ const Login = () => {
                     <div className="flex justify-center">
                         <button className=" bg-slate-400 rounded-md 
                             cursor-pointer px-4 w-1/5 py-3 border-2 border-black"
-                             onClick={loginUser}>Log in</button>
+                             onClick={loginUser}>log in</button>
                     </div>
                 </div>
             </div>
